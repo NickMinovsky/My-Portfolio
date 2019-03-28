@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400"
       rel="stylesheet"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -28,14 +29,14 @@
       </div>
       <nav class="top-nav">
         <ul class="nav-list">
-          <li>
+          <li class="nav-item">
             <a href="#" class="nav-link">Home</a>
           </li>
-          <li>
+          <li class="nav-item>
             <a href="#about" class="nav-link">About</a>
           </li>
           <li>
-            <a href="#services" class="nav-link">Services</a>
+            <a href="#technologies" class="nav-link">Technologies</a>
           </li>
           <li>
             <a href="#portfolio" class="nav-link">Portfolio</a>
@@ -47,15 +48,18 @@
       </nav>
       <div class="landing-text">
         <h1>Nick Minovsky</h1>
-        <h6>UI | UX Designer & Web Developer</h6>
+        <h6>Web Developer | Web Designer</h6>
       </div>
     </header>
     <section class="about" id="about">
       <div class="container">
-        <div class="profile-img" data-aos="zoom-in" data-aos-duration="3000">
-          <img src="images/profile.jpeg" alt="" />
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+          <img
+            src="https://www.success.com/wp-content/uploads/legacy/sites/default/files/main/blogposts/whatlivinglikeaminimalistactuallylookslike.jpg"
+            alt=""
+          />
         </div>
-        <div class="about-details">
+        <div class="about-details" data-aos="fade-left" data-aos-delay="300">
           <div class="about-heading">
             <h1>About</h1>
             <h6>Me</h6>
@@ -69,17 +73,17 @@
           <div class="social-media">
             <ul class="nav-list">
               <li>
-                <a href="#" class="icon-link">
+                <a href="https://facebook.com" class="icon-link">
                   <i class="fab fa-facebook-square"></i>
                 </a>
               </li>
               <li>
-                <a href="#" class="icon-link">
+                <a href="https://twitter.com" class="icon-link">
                   <i class="fab fa-twitter-square"></i>
                 </a>
               </li>
               <li>
-                <a href="#" class="icon-link">
+                <a href="https://github.com/NickMinovsky/" class="icon-link">
                   <i class="fab fa-github-square"></i>
                 </a>
               </li>
@@ -88,24 +92,21 @@
         </div>
       </div>
     </section>
-    <section class="services" id="services">
+    <section class="technologies" id="technologies">
       <div class="container">
         <div class="section-heading">
-          <h1>Services</h1>
-          <h6>What I can do for you</h6>
+          <h1>Technologies</h1>
+          <h6>What Do I Work With?</h6>
         </div>
         <div class="my-skills">
-          <div class="skill" data-aos="fade-up" data-aos-duration="2500">
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
             <div class="icon-container">
-              <i class="fas fa-layer-group"></i>
+              <i class="fab fa-html5"></i>
             </div>
-            <h1>Web Design</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A error
-              temporibus sit nisi minus in, numquam ipsum quibusdam asperiores
-            </p>
+            <h1>HTML</h1>
+            <p></p>
           </div>
-          <div class="skill" data-aos="fade-down" data-aos-duration="3000">
+          <div class="skill" data-aos="fade-in" data-aos-delay="600">
             <div class="icon-container">
               <i class="fas fa-laptop-code"></i>
             </div>
@@ -115,7 +116,7 @@
               temporibus sit nisi minus in, numquam ipsum quibusdam asperiores
             </p>
           </div>
-          <div class="skill" data-aos="fade-left" data-aos-duration="1500">
+          <div class="skill" data-aos="fade-in" data-aos-delay="900">
             <div class="icon-container">
               <i class="fas fa-chart-bar"></i>
             </div>
@@ -136,22 +137,25 @@
           <h6>View some of my projects</h6>
         </div>
         <!-- ITEM 1-->
-        <div class="portfolio-item" data-aos="flip-up" data-aos-duration="2000">
+        <div class="portfolio-item" data-aos="flip-right" data-aos-delay="300">
           <div class="portfolio-img has-margin-right">
-            <img src="images/portitem1.jpeg" alt="" />
+            <img src="images/Product1.png" alt="" />
           </div>
           <div class="portfolio-description">
             <h6>Web Development</h6>
-            <h1>Blog Website</h1>
+            <h1>Product Mockup</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A error
-              temporibus sit nisi minus in, numquam ipsum quibusdam asperiores
+              A one page mockup for a product, fully responsive across all
+              devices. <br />
+              built with pure CSS, Javascript and Jquery.
             </p>
-            <a href="" class="cta">View Details</a>
+            <a href="https://nickminovsky.github.io/ProductMockup1/" class="cta"
+              >View Project</a
+            >
           </div>
         </div>
         <!-- ITEM 2 -->
-        <div class="portfolio-item" data-aos="flip-up" data-aos-duration="2000">
+        <div class="portfolio-item" data-aos="flip-right" data-aos-delay="300">
           <div class="portfolio-description has-margin-right">
             <h6>Web Design</h6>
             <h1>Product Layout</h1>
@@ -166,7 +170,7 @@
           </div>
         </div>
         <!-- ITEM 3 -->
-        <div class="portfolio-item" data-aos="flip-up" data-aos-duration="2000">
+        <div class="portfolio-item" data-aos="flip-right" data-aos-delay="300">
           <div class="portfolio-img has-margin-right">
             <img src="images/portitem3.jpeg" alt="" />
           </div>
@@ -187,35 +191,12 @@
       <div class="container">
         <div class="section-heading">
           <h1>Contact Me</h1>
-          <h6>Let's work together</h6>
         </div>
-        <form action="">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name..."
-            required
-          />
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email..."
-            required
-          />
-          <label for="service">Services:</label>
-          <select name="services" id="service">
-            <option value="">Web Design</option>
-            <option value="">Web Development</option>
-            <option value="">Product Strategy</option>
-          </select>
-          <label for="subject">Subject:</label>
-          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-          <input type="submit" value="Submit" />
-        </form>
+        <div class="buttons">
+          <button class="contactme" id="emailme">Cotact by Email</button>
+          <button class="contactme">Cotact by Github</button>
+          <button class="contactme">Cotact by Phone</button>
+        </div>
       </div>
     </section>
 
@@ -227,14 +208,12 @@
     </footer>
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
+      <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
