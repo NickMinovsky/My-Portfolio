@@ -28,6 +28,6 @@ $(document).ready(function() {
     $(event.currentTarget)
       .siblings()
       .children()
-      .css("opacity", 0.4);
+      .css("opacity", 0.5);
   });
 });
