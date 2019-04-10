@@ -265,14 +265,14 @@ li {
 .icon-container {
   width: 10rem;
   height: 10rem;
-  border: 3px solid #dc8573;
+  border: 3px solid #eee;
   background-image: linear-gradient(
-    to top,
-    #e9e85d,
-    #b3ee7a,
-    #7eef9f,
-    #45ecc4,
-    #00e5e3
+    to right,
+    #593002,
+    #632f28,
+    #5d3742,
+    #4f424d,
+    #4a4a4a
   );
   text-shadow: 1px 1px 0px #e9e85d, 3px 4px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
@@ -280,7 +280,7 @@ li {
   transform: rotate(45deg);
 }
 .icon-container i {
-  color: #dc8573;
+  color: #eee;
   font-size: 5rem;
   margin: auto;
   transform: rotate(-45deg);
@@ -305,7 +305,7 @@ li {
   flex: 1;
 }
 .portfolio-description h6 {
-  color: rgb(255, 255, 255);
+  color: #eee;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -330,11 +330,17 @@ li {
   margin-top: 2.5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #3882ff;
-  transition: color 650ms;
+  color: #5ce5f7;
+  transition: background-color 650ms;
+  border-radius: 150px 150px 150px 150px;
+  border-color: #eee;
+  border-style: solid;
+  padding: 0.5rem 1rem;
 }
 .portfolio-description .cta:hover {
-  color: #2f67cd;
+  color: white;
+  background-color: #5ce5f7;
+  border-color: white;
 }
 /* contact */
 .contact {
@@ -356,17 +362,17 @@ button:focus {
   text-transform: uppercase;
   font-size: 1.4rem;
   width: initial;
-  background-color: #dad4d3;
-  color: #7fa8bb;
+  color: #5ce5f7;
   padding: 1rem 2rem;
   border-radius: 1.8rem;
   border-color: #eee;
+  padding: 1rem;
+  background: none;
   cursor: pointer;
   transition: background-color 650ms;
 }
 .contactme:hover {
   color: #dad4d3;
-
   background-color: #7fa8bb;
 }
 /* contact end */
@@ -380,8 +386,8 @@ button:focus {
 }
 .up {
   position: absolute;
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
   background-color: #eee;
   top: -8.5rem;
   right: 5rem;
@@ -393,7 +399,7 @@ button:focus {
 }
 .up i {
   color: #16162d;
-  font-size: 4rem;
+  font-size: 2rem;
   margin: auto;
 }
 
@@ -415,3 +421,107 @@ button:focus {
 }
 /* animation end */
 /* media queries */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    width: 50rem;
+    height: 100%;
+  }
+  .landing-text h1 {
+    display: block;
+    transform: translate(40%, 50%);
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1.9rem;
+    font-size: 7rem;
+  }
+  .landing-text h6 {
+    display: none;
+  }
+
+  .profile-img {
+    display: none;
+  }
+  img {
+    display: block;
+    height: auto;
+    width: 25rem;
+    margin-left: 8rem;
+  }
+
+  .portfolio-item {
+    margin-left: -10rem;
+  }
+  .portfolio-img {
+    order: 1;
+  }
+  .portfolio-description p {
+    display: block;
+    float: left;
+    margin: 0;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    width: 50rem;
+    height: 100%;
+  }
+  .landing-text h1 {
+    display: block;
+    transform: translate(40%, 50%);
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1.9rem;
+    font-size: 7rem;
+  }
+  .landing-text h6 {
+    display: none;
+  }
+
+  .profile-img {
+    display: none;
+  }
+  img {
+    display: block;
+    height: auto;
+    width: 25rem;
+    margin-left: 8rem;
+  }
+
+  .portfolio-item {
+    margin-left: -10rem;
+  }
+  .portfolio-img {
+    order: 1;
+  }
+  .portfolio-description p {
+    display: block;
+    float: left;
+    margin: 0;
+    order: 2;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  html {
+    width: 80rem;
+  }
+  .landing-text {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -20%);
+    width: 100%;
+    text-align: left;
+  }
+  .landing-text h6 {
+    text-decoration: none;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  section {
+    margin: 0;
+  }
+}
